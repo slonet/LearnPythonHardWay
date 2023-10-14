@@ -16,3 +16,6 @@ file_again = input("> ")
 txt_again = open(file_again)
 
 print(txt_again.read())
+# close the files when you're done using them
+txt.close()
+txt_again.close()
