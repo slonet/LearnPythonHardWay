@@ -1,0 +1,5 @@
+Here we are again. Making a text file for a practice script in python.
+It's a good file. The best file.
+Here's a third line for you.
+And a fourth line.
+Which is your favorite line in the file?
