@@ -26,7 +26,24 @@ for i in range(0, 6):
 	# append is a function that lists understand
 	elements.append(i)
 
+# this for loop can be eliminated by creating a list directly fom the range
+# elements = list(range(6))
+
 # now we can print them out too
 # for will iterate over the elements inside of the list
 for i in elements:
 	print(f"Element was: {i}")
+
+""" Other list methods:
+append()	- adds an element to the end of the list
+clear()		- removes all elements from the list
+copy()		- returns a copy of the list
+count()		- returns the number of elements with the specified value
+extend()	- adds the elements of a list to the end of the current list
+index()		- returns the index of the 1st element with the specified value
+insert()	- adds and element at the specified position
+pop()		- removes the element at the specified position
+remove()	- removes the 1st item with the specified value
+reverse()	- reverses the order of the list
+sort()		- sorts the list
+"""
