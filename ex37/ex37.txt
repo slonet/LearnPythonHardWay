@@ -1,0 +1,31 @@
+## Keywords ##
+
+Keyword: 		Description:
+and				Logical and
+as				Used to create an alias (import numpy as np)
+assert			Raises AssertionError if False, does nothing if True (assert x == y)
+break			Exits the loop
+class			Defines a class (class my_class: )
+continue		Ends the current iteration of the loop and starts the next iteration
+def				Defines a function
+del				Delete item from dictionary (del x[i])
+elif			Else if condition
+else			Else condition
+except			Defines what to do when an exception is raised
+exec 			Execute a string in the python interpreter
+finally			Executes no matter what. Used in try catch block. (try: except: finally:)
+for				Loop over a finite set of things
+from			Import specific parts of a larger module
+global 			Declare a global variable
+if 				If condition
+import 			Import a module into this script
+in 				Used for finding an element inside an iterable, also for iterating over for loops
+is 				Works like == but compares the identity of two objects rather than their contents.
+lambda 			Defines an anonymous function. Unlimited arguments, only one expression. Let's you 					make a small one liner function and call the variable it returns passing the 						arguments to it.
+isinstance		Checks to see if the variable is of a certain type. Returns True or False.
+pass 			Does nothing on that line. Like a NOP.
+raise 			Raises an exception of your choosing.
+try				Defines a block of code that will have exceptions caught. Part of try except block.
+with 			Simplifies handling of sources like files. Automatically closes when done.
+yield 			Works like return but produces an output while the function executes.
+				Execution continues after yielding.
