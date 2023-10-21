@@ -1,0 +1,45 @@
+## Python Classes ##
+
+- Classes are instructions for how to make on object
+
+class my_class:
+	x = 5
+
+- This class makes objects containing the variable x = 5
+
+object_from_my_class = my_class()
+print(object_from_my_class.x)
+
+- This is how you would instantiate an object of my_class and print it's contents
+
+- Classes have a built in __init__() function
+	- It is run every time an object is instantiated from a class
+	- Used to do initial setup so the object can do its work
+
+class Person:
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
+
+- naming classes: preferred that class names use camel case (ClassName)
+
+- The __str__ function defines what should be returned when the class is represented as a string
+- The default if __str__ is not defined is to return the string representation of the object
+
+- Methods inside of a class must include the object itself as an argument
+
+def class Multiplier:
+	def multiply(self, a, b):
+		return a * b
+
+m = Multiplier()
+
+m.multiply(2, 2) # returns 4
+
+- The self parameter is a reference to the current instance of the class that has been made into an object.
+- Must be the first parameter of any function in the class
+
+- del operator: used to delete properties from the class and can be used to delete the object created from the class
+
+del p.age
+del p
