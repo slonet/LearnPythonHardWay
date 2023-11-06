@@ -2,7 +2,7 @@ import random
 from urllib.request import urlopen
 import sys
 
-WORD_URL = "words.txt"
+WORD_FILE = "words.txt"
 WORDS = []
 
 PHRASES = {
@@ -27,8 +27,12 @@ else:
 	PHRASE_FIRST = False
 
 # load up the words from the website
-for word in open(WORD_URL).readlines():
-	WORDS.append(str(word.strip()))
+try:
+	for word in open(WORD_FILE).readlines():
+		WORDS.append(word)
+	print(f"Got {len(WORDS)} words from the file")
+except:
+	print("Failed to get the words")
 
 
 def convert(snippet, phrase):
@@ -70,15 +74,15 @@ try:
 		snippets = list(PHRASES.keys())
 		random.shuffle(snippets)
 
-	for snippet in snippets:
-		phrase = PHRASES[snippet]
-		question, answer = convert(snippet, phrase)
-		if PHRASE_FIRST:
-			question, answer = answer, question
+		for snippet in snippets:
+			phrase = PHRASES[snippet]
+			question, answer = convert(snippet, phrase)
+			if PHRASE_FIRST:
+				question, answer = answer, question
 
-		print(question)
+			print(question)
 
-		input("> ")
-		print(f"ANSWER: {answer}\n\n")
+			input("> ")
+			print(f"ANSWER: {answer}\n\n")
 except EOFError:
 	print("\nBye")
